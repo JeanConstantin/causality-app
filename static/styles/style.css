@@ -1,0 +1,55 @@
+body {
+  font-family: Arial;
+  background: #ECEDED;
+}
+
+.header {
+  width: 100%;
+  padding:5px 340px 0;
+  text-align: left;
+  background: white;
+  color: #000000;
+  box-shadow: 0 0 1.5px 1.5px lightgray;
+}
+
+h1 {
+  font-size: 2em;
+  padding: 0px 0px;
+  font-weight: 150;
+  letter-spacing:-2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2em;
+  padding: 0px 0px;
+  font-weight: 100;
+  letter-spacing:-2px;
+}
+
+
+.centering {
+   text-align: center;
+}
+
+.search {
+    width: 20em;  height: 2em; background: white; 
+}
+
+
+.output_box {
+    text-align: center; padding: 10px 150px 10px 150px;
+    line-height: 2;
+}
+
+mark.yellow {
+  background-color: yellow;
+}
+
+mark.blue {
+   background-color: CornflowerBlue;
+}
+
+mark.green{
+   background-color:Chartreuse;
+}
