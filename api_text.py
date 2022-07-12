@@ -12,7 +12,7 @@ nlp = spacy.load('fr_core_news_md', disable=['ner', 'lemmatizer',  'attribute_ru
 with open('connective_patterns_french.pkl', 'rb') as f:
     connective_patterns = pickle.load(f)
 
-model = CamembertForSequenceClassification.from_pretrained("causal_bert_model", id2label={0: 'not causal', 1: 'reason', 2: 'result'})
+model = CamembertForSequenceClassification.from_pretrained("jeanconstantin/causal_bert_fr", id2label={0: 'not causal', 1: 'reason', 2: 'result'})
 tokenizer = CamembertTokenizer.from_pretrained("camembert/camembert-base")
 pipe = TextClassificationPipeline(model=model, tokenizer=tokenizer, return_all_scores=True)
 
