@@ -21,6 +21,8 @@ def find_causal(arg_list, pipeline, sensitivity = None):
             if pred_dic['not causal'] < sensitivity:
                 pred_dic.pop('not causal')
                 predicted_class.append(max(pred_dic, key=pred_dic.get))
+            else:
+                predicted_class.append(max(pred_dic, key=pred_dic.get))
     
     sent_dict = {'reason':[], 'result':[]}
     for index, elem in enumerate(predicted_class):

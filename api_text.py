@@ -25,8 +25,8 @@ def home():
 @app.route('/', methods=['POST', 'GET'])
 def split_sent():
     text = request.form['text']
-    processed_text = split_argument(text, ['.', ';', ','], connective_patterns, nlp)
-    causal_args = find_causal(processed_text, pipe)
+    processed_text = split_argument(text, ['…', '.', ';', ','], connective_patterns, nlp)
+    causal_args = find_causal(processed_text, pipe, sensitivity=0.8)
     reason_indices = causal_args['reason']
     result_indices = causal_args['result']
     
