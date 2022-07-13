@@ -8,7 +8,6 @@ cymem==2.0.6
 filelock==3.7.1
 Flask==2.1.2
 fr-core-news-md @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.3.0/fr_core_news_md-3.3.0-py3-none-any.whl
-fr-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.3.0/fr_core_news_sm-3.3.0-py3-none-any.whl
 gunicorn==20.1.0
 huggingface-hub==0.8.1
 idna==3.3
