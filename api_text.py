@@ -7,7 +7,7 @@ from transformers.models.camembert.modeling_camembert import CamembertForSequenc
 from transformers import CamembertTokenizer
 from transformers import TextClassificationPipeline
 
-nlp = spacy.load('fr_core_news_md', disable=['ner', 'lemmatizer',  'attribute_ruler'])
+nlp = spacy.load('fr_core_news_sm', disable=['ner', 'lemmatizer',  'attribute_ruler'])
 
 with open('connective_patterns_french.pkl', 'rb') as f:
     connective_patterns = pickle.load(f)
