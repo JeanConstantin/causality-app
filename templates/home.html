@@ -22,6 +22,7 @@
 </form>
 </div>
 
+
  <div id="output_box" class="output_box">
   {% for n in range(output_text| length) %}
     {% if (n in reason_indices) and (n in result_indices) %}
@@ -34,6 +35,13 @@
       {{ output_text[n]}} &nbsp;
     {% endif %}
   {% endfor %}
+
+<br>
+<br>
+<div class="centering">
+   Legend:  <mark class="yellow"> Reason arguments </mark> &nbsp &nbsp  <mark class="blue"> Result arguments </mark>
+</div>
+
 </div>
 
 </body>
