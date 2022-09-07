@@ -17,11 +17,10 @@
        <textarea rows="10" cols="112" name="text"> </textarea>
        <br>
        <br>
-       <input type="submit" class="search">
+       <input type="submit" class="search" onclick="output box">
     </div>
 </form>
 </div>
-
 
  <div id="output_box" class="output_box">
   {% for n in range(output_text| length) %}
@@ -38,11 +37,20 @@
 
 <br>
 <br>
-<div class="centering">
-   Legend:  <mark class="yellow"> Reason arguments </mark> &nbsp &nbsp  <mark class="blue"> Result arguments </mark>
-</div>
+<br>
+
+  {% if (reason_indices| length > 0) or (result_indices| length > 0) %}
+   <legend>
+    <i>Legend:  <mark class="yellow"> Argument de raison </mark> &nbsp &nbsp  <mark class="blue"> Arguments de résultats </mark></i>
+   </legend>
+  {% endif %}
 
 </div>
 
 </body>
 </html>
+
+
+
+
+
